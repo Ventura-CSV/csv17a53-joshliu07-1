@@ -36,7 +36,7 @@ def my_floor(x: float) -> int:
 def my_ceil(x: float) -> int:
     """Return ceil(x) without math.ceil."""
     n = int(x)
-
+    """what"""
     if x == n:
         return n
     elif x > 0:
