@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-
 def find_non_injective_pair(mapping: dict) -> tuple | None:
-    """Return (x1, x2) where f(x1)==f(x2) and x1!=x2, or None if injective."""
-    # === TODO ===
+    """Return (x1, x2) where f(x1)==f(x2), or None."""
     seen = {}
 
     for k, v in mapping.items():
@@ -12,14 +10,9 @@ def find_non_injective_pair(mapping: dict) -> tuple | None:
         seen[v] = k
 
     return None
-    
-    # === END TODO ===
 
 
 def find_non_surjective_element(mapping: dict, target: set):
-    """Return one target element with no input mapping to it, or None if surjective."""
-    # === TODO ===
-    def find_non_surjective_element(mapping: dict, target: set):
     """Return one target element not in range, or None."""
     values = set(mapping.values())
 
@@ -28,13 +21,9 @@ def find_non_surjective_element(mapping: dict, target: set):
             return item
 
     return None
-    # === END TODO ===
 
 
 def my_floor(x: float) -> int:
-    """Return floor(x) without using math.floor."""
-    # === TODO ===
-    def my_floor(x: float) -> int:
     """Return floor(x) without math.floor."""
     n = int(x)
 
@@ -42,14 +31,10 @@ def my_floor(x: float) -> int:
         return n
     else:
         return n - 1
-    # === END TODO ===
 
 
 def my_ceil(x: float) -> int:
-    """Return ceil(x) without using math.ceil."""
-    # === TODO ===
-    def my_ceil(x: float) -> int:
-   
+    """Return ceil(x) without math.ceil."""
     n = int(x)
 
     if x == n:
@@ -58,4 +43,3 @@ def my_ceil(x: float) -> int:
         return n + 1
     else:
         return n
-    # === END TODO ===
